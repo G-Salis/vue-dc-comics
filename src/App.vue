@@ -3,7 +3,9 @@
 
     <Header/>
     <Main/>
+    <Shop/>
     <Footer/>
+    <Social/>
 
   </div>
 </template>
@@ -11,7 +13,9 @@
 <script>
 import Header from "./components/Header.vue"
 import Main from "./components/Main.vue"
+import Shop from "./components/Shop.vue"
 import Footer from "./components/Footer.vue"
+import Social from "./components/Social.vue"
 
 
 export default {
@@ -20,14 +24,14 @@ export default {
 
     Header,
     Main,
-    Footer
+    Shop,
+    Footer,
+    Social
   
   }
 }
 </script>
 
-<style >
-  h1 {
-    text-align: center;
-  }
+<style lang="scss">
+  @import "./assets/style/generals.scss"
 </style>

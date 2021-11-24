@@ -1,6 +1,7 @@
 <template>
   <header>
-    <h1>La mia prima</h1>
+    
+    <div>La mia prima</div>
     
   </header>
 </template>
@@ -14,7 +15,11 @@ export default {
 </script>
 
 <style scoped>
-   h1 {
+  header{
+    background-color: white;
+    height: 200px;
+  }
+   div {
 
     color: burlywood;
   }

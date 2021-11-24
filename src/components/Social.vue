@@ -1,21 +1,22 @@
 <template>
-  <footer>
-    <div>VUE</div>
+  <section>
+
+    <div>Social Media</div>
     
-  </footer>
+  </section>
 </template>
 
 <script>
 export default {
 
-    name: "Footer"
+    name: "Social"
   
 }
 </script>
 
 <style scoped>
-  footer{
-    background-image: url('../assets/img/footer-bg.jpg');
+  section{
+    background-color: #303030;
     height: 200px;
   }
 

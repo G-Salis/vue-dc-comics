@@ -1,26 +1,27 @@
 <template>
-  <main>
-    <div>App con</div>
+  <section>
+
+    <div>Shop</div>
     
-  </main>
+  </section>
 </template>
 
 <script>
 export default {
 
-    name: "Main"
+    name: "Shop"
   
 }
 </script>
 
 <style scoped>
-   main{
-    background-color: black;
+  section{
+    background-color: #0282F9;
     height: 200px;
   }
    div {
 
-    color: blue;
+    color: white;
   }
 
 </style>
