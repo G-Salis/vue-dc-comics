@@ -69,6 +69,8 @@ export default {
     background-repeat: no-repeat;
     background-position: right;
     display: flex;
+    justify-content: start;
+    align-items: baseline;
     width: 80%;
     margin: 0 auto;
     min-height: 150px;
