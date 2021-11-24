@@ -1,7 +1,28 @@
 <template>
   <section>
 
-    <div>Shop</div>
+    <div class="container">
+      <div>
+        <img src="../assets/img/buy-comics-digital-comics.png" alt="">
+        <h3>DIGITAL COMICS</h3>
+      </div>
+      <div>
+        <img src="../assets/img/buy-comics-merchandise.png" alt="">
+        <h3>DC MERCHANDISE</h3>
+      </div>
+      <div>
+        <img src="../assets/img/buy-comics-subscriptions.png" alt="">
+        <h3>SUBSCRIPTIONS</h3>
+      </div>
+      <div>
+        <img src="../assets/img/buy-comics-shop-locator.png" alt="">
+        <h3>COMIC SHOP LOCATOR</h3>
+      </div>
+      <div>
+        <img src="../assets/img/buy-dc-power-visa.svg" alt="">
+        <h3>DC POWER VISA</h3>
+      </div>
+    </div>
     
   </section>
 </template>
@@ -17,11 +38,19 @@ export default {
 <style scoped>
   section{
     background-color: #0282F9;
-    height: 200px;
+    height: 150px;
   }
    div {
-
+    display: flex;
+    align-items: center;
     color: white;
   }
+    img{
+        width: 50px;
+        margin-right: 5px;
+        margin-bottom: 5px;
+        
+      }
+       
 
 </style>
