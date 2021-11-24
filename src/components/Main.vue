@@ -1,6 +1,9 @@
 <template>
   <main>
-    <div>App con</div>
+    
+    <div class="container">
+      <h1> --&#62; Content goes here &#60;-- </h1>
+    </div>
     
   </main>
 </template>
@@ -16,11 +19,9 @@ export default {
 <style scoped>
    main{
     background-color: black;
+    color: white;
     height: 200px;
   }
-   div {
-
-    color: blue;
-  }
+ 
 
 </style>
