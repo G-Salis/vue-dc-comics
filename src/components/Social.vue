@@ -4,21 +4,33 @@
     <div class="container">
         <button>SIGN-UP NOW!</button>
         <div>
-          <h3>FOLLOW US</h3>
-          <img src="../assets/img/footer-facebook.png" alt="">
-          <img src="../assets/img/footer-twitter.png" alt="">
-          <img src="../assets/img/footer-youtube.png" alt="">
-          <img src="../assets/img/footer-pinterest.png" alt="">
-          <img src="../assets/img/footer-periscope.png" alt="">
+          <span>FOLLOW US</span>
+          <img
+          v-for="(card, index) in productSocial" 
+          :key="`ciclo-social${index}`"
+          :src="card.img" alt=""
+          >
+          
         </div>
       </div>
   </section>
 </template>
 
 <script>
+
+import productSocial from '../assets/data/productSocial.js';
+
 export default {
 
-    name: "Social"
+    name: "Social",
+
+
+    data(){
+    return{
+      productSocial
+    }
+  
+  }
   
 }
 </script>
@@ -26,7 +38,7 @@ export default {
 <style scoped>
   section{
     background-color: #303030;
-    height: 200px;
+    min-height: 100px;
   }
 
   button{
@@ -39,6 +51,13 @@ export default {
 
    img{
      margin: 0px 10px;
+   }
+
+   span{
+     font-size: 25px;
+     color: #0282F9;
+     font-weight: 900;
+     vertical-align: super;
    }
 
 </style>

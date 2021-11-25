@@ -1,6 +1,7 @@
 <template>
   <footer>
-    <div class="container">
+    <div class="bg-img">
+      <div class="container">
           <div class="left-list">
             <div>DC COMICS</div>
             <ul>
@@ -45,6 +46,7 @@
           </ul>
         </div>
       </div>
+    </div>
   </footer>
 </template>
 
@@ -61,13 +63,17 @@ export default {
   footer{
     background-image: url('../assets/img/footer-bg.jpg');
     height: 400px;
+  }
+
+  .bg-img{
+    background-image: url('../assets/img/dc-logo-bg.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 400px;
     padding: 50px 0px;
   }
 
   .container{
-    background-image: url('../assets/img/dc-logo-bg.png');
-    background-repeat: no-repeat;
-    background-position: right;
     display: flex;
     justify-content: start;
     align-items: baseline;

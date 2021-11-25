@@ -8,7 +8,7 @@
     <div>
       <ul>
         <li
-        v-for="(link, index) in links" 
+        v-for="(link, index) in productCard" 
         :key="`ciclo-nav${index}`"
         ><a href="#">{{link.text}}</a></li>
       </ul>
@@ -19,64 +19,16 @@
 </template>
 
 <script>
+
+import productCard from '../assets/data/productCard.js';
+
 export default {
 
     name: "Header",
 
     data(){
     return{
-      links:[
-        {
-          url: "/characters",
-          text: "characters",
-          current: false,
-        },
-        {
-          url: "/comic",
-          text: "comic",
-          current: false,
-        },
-        {
-          url: "/movies",
-          text: "movies",
-          current: false,
-        },
-        {
-          url: "/tv",
-          text: "tv",
-          current: false,
-        },
-        {
-          url: "/games",
-          text: "games",
-          current: false,
-        },
-        {
-          url: "/collectibles",
-          text: "collectibles",
-          current: false,
-        },
-        {
-          url: "/videos",
-          text: "videos",
-          current: false,
-        },
-        {
-          url: "/fans",
-          text: "fans",
-          current: false,
-        },
-        {
-          url: "/news",
-          text: "news",
-          current: false,
-        },
-        {
-          url: "/shop",
-          text: "shop",
-          current: false,
-        },
-      ]
+      productCard
     }
   
   }
